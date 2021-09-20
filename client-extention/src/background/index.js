@@ -11,7 +11,7 @@ socket.on("hello" , (data) =>
 
 socket.on("run_puppet" ,(data) => 
 {
-  chrome.tabs.create({'url' :'localhost:5000'})
+  chrome.tabs.create({'url' :data})
   console.log(data)
   
   // chrome.tabs.executeScript(tab.id, {code: "alert(document.querySelector('body'));"});
